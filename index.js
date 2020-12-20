@@ -133,7 +133,7 @@ console.log(chalk.hex("#047857")("Guidelines for the quiz:\n - There will be 10 
 
 if(readlineSync.keyInYN("Do you want to start\n")){
   var j=1;
-  console.log(linebreak\n);
+  console.log(linebreak);
   for(var i=0;i<list.length;i++)
     {
         qna(list[i].question,list[i].answer,list[i].option,list[i].id)
