@@ -1,4 +1,4 @@
-# HowWellDoYouKnowMe
+# Web Quiz
 
 This is a cli web quiz app,which asks basic question of html, css, javascript 
 
@@ -26,7 +26,7 @@ The motivation behind creating this project is [neogcamp](https://neog.camp/)
 
 # Usage
 
-* [Go to this link](https://repl.it/@poonammohata/WebQuiz?embed=1&output=1#index.js)
+* [Go to this link](https://repl.it/@poonammohata/WebQuiz?embed=1&output=1)
 * click on play button
 * add your name
 * see the question and answer them
