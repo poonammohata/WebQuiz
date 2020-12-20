@@ -64,39 +64,6 @@ var list=[
   }
 ];
 
-//array store scores
-var score=[
-  {
-    name:"poonam",
-    score:5
-  },
-  {
-    name:"prachi",
-    score:8
-  }
-]
-
-//function to check highestscore
-function highScore(){
-  var max=score[0].score;
-  for(var i=1;i<score.length;i++){
-    if(max<score[i].score){
-      max=score[i].score;
-    }
-  }
-  return max;
-}
-//function to check the person who scored highest score
-function highScorePerson(){
-  var max=score[0].score;
-  var highperson=score[0].name;
-  for(var i=1;i<score.length;i++){
-    if(max<score[i].score){
-      highperson=score[i].name;
-    }
-  }
-  return highperson;
-}
 //variable count the score
 var count=0;
 //function for qna
@@ -109,7 +76,7 @@ function qna(question,answer,option,id){
   var userans=readlineSync.question(chalk.hex("#047857")("\nenter the correct option "));
 
   if(option[userans-1]===answer){
-    count=count+1;
+    count=count+2;
     console.log(chalk.green("\nYipppi!!, right answer"));
     console.log(chalk.green("you got 1 point"));
     console.log(chalk.rgb(123, 45, 67)("==============================\n"))
@@ -146,5 +113,4 @@ var highScore=highScore();
 var highScoreName=highScorePerson();
 
 console.log(chalk.green.bgRed("  "+name+" your score is "+count+"  "));
-console.log(chalk.red("The highest score is "+highScore+" and it is scored by "+highScoreName))
-console.log(chalk.hex("#047857")("if u have beaten the highest score,send the screenshot"));
+
