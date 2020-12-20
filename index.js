@@ -105,12 +105,10 @@ if(readlineSync.keyInYN("Do you want to start\n")){
     {
         qna(list[i].question,list[i].answer,list[i].option,list[i].id)
     }
+  console.log(chalk.green.bgRed("  "+name+" your score is "+count+"  "));
 } 
 else{
-  console.log("\nBye-Bye, have a nice day "+name);
+  console.log(chalk.red("\nBye-Bye, have a nice day "+name));
 };
-var highScore=highScore();
-var highScoreName=highScorePerson();
 
-console.log(chalk.green.bgRed("  "+name+" your score is "+count+"  "));
 
